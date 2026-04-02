@@ -11,7 +11,7 @@ def home():
     if request.method == "POST":
         user_input = request.form["user_input"].lower()
 
-        # 👉 Detailed responses (same as before)
+
         if "ai" in user_input:
             response = "Artificial Intelligence (AI) is the simulation of human intelligence in machines that are programmed to think and learn."
 
@@ -30,7 +30,7 @@ def home():
         else:
             response = "I'm still learning 😊 Please ask something related to AI, Machine Learning, or Python."
 
-        # 👉 Save chat history
+        
         chat_history.append(("user", user_input))
         chat_history.append(("bot", response))
 
